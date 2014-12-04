@@ -1,32 +1,32 @@
 {
-    "name": "lorem-img",
-    "main": "lorem-img.html",
-    "description": "A Lorem Ipsum element for images. Based on lorempixel.com",
-    "version": "0.0.2",
-    "authors": [
-        "Wilfried Kopp <chevdor@gmail.com>"
-    ],
-    "keywords": [
-        "web-component",
-        "polymer",
-        "lorem-ipsum"
-    ],
-    "dependencies": {
-        "webcomponentsjs": "webcomponentsjs#^0.5.0",
-        "polymer": "Polymer/polymer#~0.3.6"
-    },
-    "devDependencies": {
-        "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:chevdor/lorem-img.git"
-    },
-    "ignore": [
+  "name": "lorem-img",
+  "main": "lorem-img.html",
+  "description": "A Lorem Ipsum element for images. Based on lorempixel.com",
+  "version": "0.1.0",
+  "authors": [
+    "Wilfried Kopp <chevdor@gmail.com>"
+  ],
+  "keywords": [
+    "web-component",
+    "polymer",
+    "lorem-ipsum"
+  ],
+  "dependencies": {
+    "webcomponentsjs": "webcomponentsjs#^0.5.0",
+    "polymer": "Polymer/polymer#~0.3.6"
+  },
+  "devDependencies": {
+    "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:chevdor/lorem-img.git"
+  },
+  "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-    ]
+  ]
 }
