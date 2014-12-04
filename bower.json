@@ -2,7 +2,7 @@
   "name": "lorem-img",
   "main": "lorem-img.html",
   "description": "A Lorem Ipsum element for images. Based on lorempixel.com",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [
     "Wilfried Kopp <chevdor@gmail.com>"
   ],
