@@ -65,7 +65,7 @@
 
         this.args = args;
 
-        console.log(args);
+        //console.log(args);
       },
 
       /**
