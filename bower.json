@@ -1,17 +1,24 @@
 {
-  "name": "lorem-img.html",
-  "description": "A Lorem Ipsum element for images. Based on lorempixel.com",
-  "version": "0.0.1",
-  "keywords": [
-    "web-component",
-    "polymer",
-    "lorem-ipsum"
-  ],
-  "dependencies": {
-    "platform": "Polymer/platform#~0.3.3",
-    "polymer": "Polymer/polymer#~0.3.3"
-  },
-  "devDependencies": {
-    "closure-compiler" : "http://dl.google.com/closure-compiler/compiler-latest.zip"
-  }
+    "name": "lorem-img.html",
+    "description": "A Lorem Ipsum element for images. Based on lorempixel.com",
+    "version": "0.0.1",
+    "authors": [
+        "Wilfried Kopp <chevdor@gmail.com>"
+    ],
+    "keywords": [
+        "web-component",
+        "polymer",
+        "lorem-ipsum"
+    ],
+    "dependencies": {
+        "platform": "Polymer/platform#~0.3.3",
+        "polymer": "Polymer/polymer#~0.3.3"
+    },
+    "devDependencies": {
+        "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:chevdor/lorem-img.git"
+    }
 }
