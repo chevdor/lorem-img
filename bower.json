@@ -1,7 +1,12 @@
 {
-  "name": "lorem-img",
+  "name": "lorem-img.html",
   "description": "A Lorem Ipsum element for images. Based on lorempixel.com",
   "version": "0.0.1",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "lorem-ipsum"
+  ],
   "dependencies": {
     "platform": "Polymer/platform#~0.3.3",
     "polymer": "Polymer/polymer#~0.3.3"
