@@ -1,0 +1,28 @@
+<link rel="import" href="../lib/.bower_components/polymer/polymer.html">
+
+<!--
+A Lorem Ipsum element but for images. Based on lorempixel.com.
+
+##### Example
+
+    <lorem-img></lorem-img>
+
+@element lorem-img
+@blurb A Lorem Ipsum element but for images. Based on lorempixel.com
+@status alpha
+@homepage http://chevdor.github.io/lorem-img
+-->
+<polymer-element name="lorem-img" attributes="bw w h cat txt n nocache">
+    <template>
+        <img src="http://lorempixel.com/{{args}}" alt="{{txt}}" />
+    </template>
+
+    <template bind if="{{showLegend}}">
+        <figcaption>{{txt}}</figcaption>
+    </template>
+
+    <!-- build:js scripts/lorem-img.min.js -->
+    <script src="scripts/lorem-img.js"></script>
+    <!-- endbuild -->
+
+</polymer-element>

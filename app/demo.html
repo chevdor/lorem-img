@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>lorem-img Demo</title>
+    <script src="../lib/.bower_components/platform/platform.js"></script>
+    <link rel="import" href="../lib/.bower_components/polymer/polymer.html">
+    <link rel="import" href="lorem-img.html">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    th {
+        padding-left: 10px;
+    }
+    td {
+        padding: 10px 10px 10px;
+    }
+    </style>
+</head>
+
+<body unresolved>
+    <div class="col-md-12" role="main">
+
+        <div class="page-header">
+            <h3>Here are a few examples of the `lorem-img`</h3>
+        </div>
+
+        <p>This web component uses Polymer. You can find the project page for this component on GitHub: <a href="http://chevdor.github.io/lorem-img">http://chevdor.github.io/lorem-img</a>
+        </p>
+
+        <p>This component is loading images from <a href="http://lorempixel.com/">http://lorempixel.com/</a>.</p>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <p class="panel-title">Basic usage:
+
+                </p>
+            </div>
+            <div class="panel-body">
+                <p>You get some random image with the default size. Whatever you get is cached in your page so any other call will bring the same image unless you use the nocache attribute.</p>
+
+                <xmp>
+                    <lorem-img></lorem-img>
+                </xmp>
+
+                <lorem-img></lorem-img>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <p class="panel-title">Specifying the size:
+
+                </p>
+            </div>
+            <div class="panel-body">
+                <p>If you omit one dimension, it defaults to 100.</p>
+                <xmp>
+                    <lorem-img w="200" h="200"></lorem-img>
+                </xmp>
+                <lorem-img w="200" h="200"></lorem-img>
+                <lorem-img w="100" h="200"></lorem-img>
+                <lorem-img w="400" h="100"></lorem-img>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <p class="panel-title">Specifying some text:
+
+                </p>
+            </div>
+            <div class="panel-body">
+                <p>Watch out, if you don´t provide a category, you get a cat!</p>
+                <xmp>
+                    <lorem-img txt="Soooooo cuuuuute"></lorem-img>
+                </xmp>
+
+                <lorem-img w="200" h="300" cat="cats" txt="Soooooo cuuuuute"></lorem-img>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <p class="panel-title">Specifying a category:
+
+                </p>
+            </div>
+            <div class="panel-body">
+                <p>You can select one of the following categories.</p>
+                <xmp>
+                    <lorem-img cat="people"></lorem-img>
+                </xmp>
+                <table>
+                    <tr>
+                        <th>abstract</th>
+                        <th>animals</th>
+                        <th>business</th>
+                        <th>cats</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lorem-img cat="abstract"></lorem-img>
+                        </td>
+                        <td>
+                            <lorem-img cat="animals"></lorem-img>
+                        </td>
+                        <td>
+                            <lorem-img cat="business"></lorem-img>
+                        </td>
+                        <td>
+                            <lorem-img cat="cats"></lorem-img>
+                        </td>
+                    </tr>
+
+                    <tr></tr>
+
+                    <tr>
+                        <th>city</th>
+                        <th>food</th>
+                        <th>nightlife</th>
+                        <th>fashion</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lorem-img cat="city"></lorem-img>
+                        </td>
+                        <td>
+                            <lorem-img cat="food"></lorem-img>
+                        </td>
+                        <td>
+                            <lorem-img cat="nightlife"></lorem-img>
+                        </td>
+                        <td>
+                            <lorem-img cat="fashion"></lorem-img>
+                        </td>
+
+                    </tr>
+
+                    <tr></tr>
+
+                    <tr>
+                        <th>people</th>
+                        <th>nature</th>
+                        <th>sports</th>
+                        <th>technics</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lorem-img cat="people"></lorem-img>
+                        </td>
+                        <td>
+                            <lorem-img cat="nature"></lorem-img>
+                        </td>
+                        <td>
+                            <lorem-img cat="sports"></lorem-img>
+                        </td>
+                        <td>
+                            <lorem-img cat="technics"></lorem-img>
+                        </td>
+
+                    </tr>
+
+                    <tr></tr>
+
+                    <tr>
+                        <th>transport</th>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <lorem-img cat="transport"></lorem-img>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <p class="panel-title">
+                    Specific image in the set.
+                </p>
+            </div>
+            <div class="panel-body">
+                <p>Always get image N of the set (reload to see: it remains the same image)</p>
+                <xmp>
+                    <lorem-img n="1" cat="cats"></lorem-img>
+                </xmp>
+                <lorem-img n="1" cat="cats"></lorem-img>
+                <lorem-img n="1" cat="people"></lorem-img>
+                <lorem-img n="1" cat="city"></lorem-img>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <p class="panel-title">No Cache
+
+                </p>
+            </div>
+            <div class="panel-body">
+                <xmp>
+                    <lorem-img nocache></lorem-img>
+                </xmp>
+                <p>Always ensure we get a different picture, although we use the same size and params.</p>
+
+                <lorem-img nocache></lorem-img>
+                <lorem-img nocache></lorem-img>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
