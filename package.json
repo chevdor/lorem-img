@@ -1,7 +1,9 @@
 {
   "name": "lorem-img-element",
-  "version": "0.0.0",
-  "dependencies": {},
+  "version": "0.2.0",
+  "dependencies": {
+    "gulp-zopfli": "^0.1.1"
+  },
   "devDependencies": {
     "browser-sync": "^1.1.2",
     "glob": "^4.0.2",

@@ -125,7 +125,7 @@ var sizeOf = function(stream, title){
         fileName        : currentFilename + '.js',
         compilerFlags   : {
           warning_level : 'QUIET'
-          //, language_in      : 'ECMASCRIPT5_STRICT'
+          , language_in      : 'ECMASCRIPT5_STRICT'
         }
       }))
       .pipe(gulp.dest(distDir + '/scripts'))

@@ -2,7 +2,7 @@
   "name": "lorem-img",
   "main": "lorem-img.html",
   "description": "A Lorem Ipsum element for images. Based on lorempixel.com",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "authors": [
     "Wilfried Kopp <chevdor@gmail.com>"
   ],
@@ -12,8 +12,8 @@
     "lorem-ipsum"
   ],
   "dependencies": {
-    "webcomponentsjs": "webcomponentsjs#^0.5.0",
-    "polymer": "Polymer/polymer#~0.3.6"
+    "webcomponentsjs": "webcomponentsjs#^0.5.1",
+    "polymer": "Polymer/polymer#~0.5.4"
   },
   "devDependencies": {
     "closure-compiler": "http://dl.google.com/closure-compiler/compiler-latest.zip"
